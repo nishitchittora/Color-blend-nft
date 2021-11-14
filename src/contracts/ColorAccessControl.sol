@@ -1,3 +1,5 @@
+
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 
@@ -5,7 +7,7 @@ contract ColorAccessControl {
     address public admin;
 
     modifier onlyAdmin() {
-        require(msg.sender == ceoAddress);
+        require(msg.sender == admin);
         _;
     }
 
